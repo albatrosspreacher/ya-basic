@@ -1,28 +1,21 @@
 {
-  "name": "ya-basic",
+  "name": "cockroach",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "cockroach-test.js",
   "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cockroach-test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nandiniproothi/ya-basic.git"
-  },
-  "engines": {
-    "node": "12.x"
-  },
-  "author": "Nandini Proothi",
-  "license": "",
-  "bugs": {
-    "url": "https://github.com/nandiniproothi/ya-basic/issues"
-  },
-  "homepage": "https://github.com/nandiniproothi/ya-basic#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@supercharge/strings": "^1.19.0",
+    "async": "^3.2.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "sequelize-cockroachdb": "^6.0.1"
   }
 }
