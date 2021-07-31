@@ -16,7 +16,7 @@ app.get("/dashboard", (req, res) => {
 
 app.get("/login", (req, res) => {
   //perform some action
-})
+});
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {

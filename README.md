@@ -1,11 +1,13 @@
 # ya-basic
 
-A website that tells you if your taste in music is basic or not! Link your Spotify account, check out your stats, and compare them with those of your friends! 
+A website that tells you if your taste in music is basic or not! Link your Spotify account, check out your stats, and compare them with those of your friends!
 
 ## Demo
-![]()
----
-## Usage 
+
+## ![]()
+
+## Usage
+
 This application is live [here]() <br/>
 
 1. Login with Spotify and grant access to the application
@@ -13,33 +15,41 @@ This application is live [here]() <br/>
 3. Once your friends grant access to the application, you can compare stats!
 
 ---
-## Running It Locally 
-### Prerequisites 
+
+## Running It Locally
+
+### Prerequisites
+
 **Cockroach DB**
+
 1. Configure a Cockroach DB cluster.
 2. Set up the schemas according to [this]()
 
 **Spotify**
+
 1. Sign up for a developer account
 2. Create an app with the [necessary auth scopes]()
 3. Whitelist the app's URL in Spotify's app dashboard
 
 ### Steps
+
 1. Clone the repository: `git clone https://github.com/nandiniproothi/ya-basic.git`
 2. Navigate to the directory and install all dependencies: `npm i` or `npm install`
 3. Add all necessary parameters in the `.env` file
 4. Start the application using: `npm start`
 5. Head over to localhost:[port_number]
+
 ---
 
-## Contributing 
+## Contributing
 
 All contributions are welcome!
 
 - If you're a fellow scholar or just someone who is interested to learn, feel free to make a PR
 - In case of major changes/enhancements, please open an [Issue](https://github.com/nandiniproothi/ya-basic/issues) first
 
---- 
+---
+
 ## License
 
 [MIT](LICENSE)
