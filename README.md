@@ -37,7 +37,7 @@ This application is live [here]() <br/>
 All contributions are welcome!
 
 - If you're a fellow scholar or just someone who is interested to learn, feel free to make a PR
-- In case of major changes/enhancements, please open an [Issue](https://github.com/nandiniproothi/udacity-SUSE-cloud-native-scholarship/issues) first
+- In case of major changes/enhancements, please open an [Issue](https://github.com/nandiniproothi/ya-basic/issues) first
 
 --- 
 ## License
