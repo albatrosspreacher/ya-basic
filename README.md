@@ -8,7 +8,7 @@ A website that tells you if your taste in music is basic or not! Link your Spoti
 
 ## Usage
 
-This application is live [here](http://www.ya-basic.co/) <br/>
+This application is live [here](https://www.ya-basic.co/) <br/>
 
 1. Login with Spotify and grant access to the application
 2. View your own stats and share your referrals with your friends (you can share this with up to 2 friends as of now)
