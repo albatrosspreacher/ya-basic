@@ -1,0 +1,27 @@
+{
+  "name": "ya-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandiniproothi/ya-basic.git"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Nandini Proothi",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/nandiniproothi/ya-basic/issues"
+  },
+  "homepage": "https://github.com/nandiniproothi/ya-basic#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^8.3.2"
+  }
+}
