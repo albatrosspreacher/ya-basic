@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -27,7 +31,7 @@ nav {
   background-color: #C7EBF0;
   border-bottom: 1px solid grey;
 }
-a{
+a {
   color: #303030;
 }
 form {
@@ -48,9 +52,7 @@ form {
   width: 100%;
 }
 
-
 #login:hover,
-
 #login:focus {
   box-shadow: 5px 5px 10px #d1d1f6;
 }
