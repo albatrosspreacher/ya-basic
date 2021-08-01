@@ -22,6 +22,7 @@ app.get("/dashboard", (req, res) => {
 });
 
 app.use("/auth", require("./routes/auth"));
+app.use("/user", require("./routes/user"));
 
 // ;)
 app.get("/buddy", (req, res) => {
