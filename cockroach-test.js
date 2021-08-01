@@ -164,7 +164,7 @@ async function main(){
     //await testConnection();
     //await newUser("3456789", "test-user", ["fletcher", "half-alive"], ["pop"], 10);
     //await checkUserExists("8765432");
-    await displayUser("9876543");
+    //await displayUser("9876543");
     //await checkSlots("zWrjls9");
     //await addReferral("zWrjls9", "8765432");
 }
