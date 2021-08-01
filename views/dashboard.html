@@ -133,8 +133,13 @@
       <div class="row">
         <div class="col-sm-3">
           <p id="copied"></p>
-          <label for="referralCode">Your Referral Code is:</label> 
-          <textarea rows="1" id="referralCode" onclick="copyCode()" readonly>12345</textarea> 
+          <label for="referralCode">Your Referral Code is:</label>
+          <textarea
+            rows="1"
+            id="referralCode"
+            onclick="copyCode()"
+            readonly
+          >12345</textarea>
         </div>
       </div>
     </script>
@@ -215,5 +220,18 @@
       })();
     </script>
     <script src="/script-dashboard.js"></script>
+    <!-- simple analytics begins -->
+    <script
+      async
+      defer
+      src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+    /></noscript>
+    <!-- simple analytics ends -->
   </body>
 </html>
