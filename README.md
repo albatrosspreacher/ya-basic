@@ -29,7 +29,7 @@ constraint "primary" primary key (referral_code, uid_1)
 ## Functions Defined
 
 - testConnection(): To check if we're connected to the Cockroach DB cluster
-- newUser(uid_1): Save a new user with uid (String)
+- newUser(uid_1, uname, artists, genres, basic_score): Save a new user with uid (string), uname (string), artists(string[]), genres(string[]), basic_score(int)
 - checkUserExists(uid_1): Checks if a user exists in the database with uid (String)
 - displayUser(uid_1): Fetch all user details by entering uid (String)
 - checkSlots(ref_code): Checks if slots are empty for the given ref_code (String)
