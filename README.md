@@ -14,6 +14,10 @@ referral_code string not null unique,
 uid_1 string not null unique,
 uid_2 string,
 uid_3 string,
+uname string,
+artists string[],
+genres string[],
+basic_score int,
 constraint "primary" primary key (referral_code, uid_1)
 );
 ```
