@@ -23,7 +23,7 @@ This application is live [here](https://www.ya-basic.co/) <br/>
 **Cockroach DB**
 
 1. Configure a Cockroach DB cluster.
-2. Set up the schemas according to [this]()
+2. Set up the schemas according to [this](https://github.com/nandiniproothi/ya-basic/blob/cockroach-scripts/README.md)
 
 **Spotify**
 
