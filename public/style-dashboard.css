@@ -1,0 +1,93 @@
+#login,
+#loggedin {
+  display: none;
+}
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 500px;
+}
+
+/* this file is loaded by index.html and styles the page */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #fff9f1;
+  }
+  
+  h3 {
+    text-decoration-line: underline;
+  }
+  h3:hover {
+    text-decoration: underline dashed;
+  }
+  .row {
+    padding-top: 30px;
+  }
+  nav {
+    background-color: #C7EBF0;
+    border-bottom: 1px solid grey;
+  }
+  a {
+    color: #303030;
+  }
+  form {
+    display: block;
+    grid-gap: 1em;
+    padding: 1em;
+    max-width: 40ch;
+    text-align: center;
+  }
+  
+  #login {
+    border: 2px solid currentColor;
+    border-radius: 0.25em;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  #login:hover,
+  #login:focus {
+    box-shadow: 5px 5px 10px #d1d1f6;
+  }
+  
+  form button {
+    background-color: #bbbbf2;
+    border: 2px solid currentColor;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: 1.4em;
+    padding: 0.25em 1em;
+    max-width: 20ch;
+  }
+  
+  form button:hover {
+    background-color: lavender;
+    box-shadow: 5px 5px 10px #d1d1f6;
+  }
+  
+  textarea{
+    background-color: transparent;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+  }
+  footer {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid lightgrey;
+  }
+  
