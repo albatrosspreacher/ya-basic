@@ -1,6 +1,6 @@
 # ya-basic
 
-A website that tells you if your taste in music is basic or not! Link your Spotify account, check out your stats, and compare them with those of your friends!
+A website that tells you who has more basic music taste between you and your friends! Link your Spotify account, check out your stats, and compare them with those of your friends!
 
 ## Demo
 
@@ -8,7 +8,7 @@ A website that tells you if your taste in music is basic or not! Link your Spoti
 
 ## Usage
 
-This application is live [here]() <br/>
+This application is live [here](https://www.ya-basic.co/) <br/>
 
 1. Login with Spotify and grant access to the application
 2. View your own stats and share your referrals with your friends (you can share this with up to 2 friends as of now)
@@ -23,7 +23,7 @@ This application is live [here]() <br/>
 **Cockroach DB**
 
 1. Configure a Cockroach DB cluster.
-2. Set up the schemas according to [this]()
+2. Set up the schemas according to [this](https://github.com/nandiniproothi/ya-basic/blob/cockroach-scripts/README.md)
 
 **Spotify**
 
