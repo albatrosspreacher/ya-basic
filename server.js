@@ -8,15 +8,18 @@ require("dotenv").config();
 // setting up express
 app.use(express.static("public"));
 app.use(express.json());
-app.use(express.urlencoded({extended : true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(require("cookie-parser")());
 app.use(require("cors")());
 app.use(require("morgan")("tiny"));
 
-app.get("/", (req, res) => { res.sendFile(__dirname + "/views/index.html"); });
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+});
 
-app.get("/dashboard",
-        (req, res) => { res.sendFile(__dirname + "/views/dashboard.html"); });
+app.get("/dashboard", (req, res) => {
+  res.sendFile(__dirname + "/views/dashboard.html");
+});
 
 app.use("/auth", require("./routes/auth"));
 
