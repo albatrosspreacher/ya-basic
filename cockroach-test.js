@@ -93,10 +93,64 @@ async function checkUserExists(uid_1){
     }
 }
 
+// fetch all user details by entering uid (string)
+async function displayUser(uid_1){
+  const user = await User.findOne({ where: { uid_1: uid_1 } });
+  //console.log(user);
+  if (user === null) {
+    console.log('User not found!');
+    return null;
+  } else {
+    var data = [];
+    data.push(user.referral_code);
+    data.push(user.uid_1);
+    data.push(user.uid_2);
+    data.push(user.uid_3);
+    console.log(data);
+    return data;
+  }
+}
+
+// checks if slots are empty for the given referral code
+async function checkSlots(ref_code){
+  const user = await User.findOne({ where: { referral_code: ref_code } });
+  if (user === null) {
+    console.log('User not found!');
+    return null;
+  } else {
+    var data = [];
+    if(user.uid_2 == null){
+      data.push(2);
+    }
+    if(user.uid_3 == null){
+      data.push(3);
+    }
+    console.log(data);
+    return data; // returns array like [2,3] [3] 
+  }
+}
+
+// adds passed uid to the referral's row (either as uid_2 or uid_3 depending on availability)
+async function addReferral(ref_code, uid){
+  const user = await User.findOne({ where: { referral_code: ref_code } });
+  var data = await checkSlots(ref_code);
+  if(data.length == 0){
+    console.log('No slots empty!');
+    return null;
+  }
+  else{
+    await user.set(`uid_${data[0]}`, uid).save();
+    //await displayUser(user.uid_1);
+  }
+}
+
 async function main(){
-    await testConnection();
-    await newUser("8765432");
-    await checkUserExists("8765432");
+    //await testConnection();
+    //await newUser("8765432");
+    //await checkUserExists("8765432");
+    //await displayUser("7654321");
+    //await checkSlots("zWrjls9");
+    //await addReferral("zWrjls9", "8765432");
 }
 
 main();
