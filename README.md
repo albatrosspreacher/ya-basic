@@ -2,6 +2,8 @@
 
 A website that tells you if your taste in music is basic or not! Link your Spotify account, check out your stats, and compare them with those of your friends!
 
+---
+
 ## Cockroach DB
 
 - Create a table in your database
@@ -17,6 +19,19 @@ constraint "primary" primary key (referral_code, uid_1)
 ```
 
 - Keep these values in your `.env` file: DB_USERNAME, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME
+
+---
+
+## Functions Defined
+
+- testConnection(): To check if we're connected to the Cockroach DB cluster
+- newUser(uid_1): Save a new user with uid (String)
+- checkUserExists(uid_1): Checks if a user exists in the database with uid (String)
+- displayUser(uid_1): Fetch all user details by entering uid (String)
+- checkSlots(ref_code): Checks if slots are empty for the given ref_code (String)
+- addReferral(ref_code, uid): Adds passed uid (String) to the referral's row (either as uid_2 (String) or uid_3 (String) depending on availability)
+
+---
 
 ## Contributing
 
