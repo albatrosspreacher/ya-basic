@@ -1,6 +1,6 @@
 # ya-basic
 
-A website that tells you if your taste in music is basic or not! Link your Spotify account, check out your stats, and compare them with those of your friends!
+A website that tells you who has more basic music taste between you and your friends! Link your Spotify account, check out your stats, and compare them with those of your friends!
 
 ## Demo
 
