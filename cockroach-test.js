@@ -39,6 +39,18 @@ const User = sequelize.define(
     uid_3: {
       type: DataTypes.STRING,
     },
+    uname: {
+      type: DataTypes.STRING,
+    },
+    artists: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+    },
+    genres: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+    },
+    basic_score: {
+      type: DataTypes.INTEGER,
+    },
   },
   {
     sequelize, // we need to pass the connection instance
@@ -60,10 +72,10 @@ async function testConnection() {
   }
 }
 
-// save a new user with uid (string)
-async function newUser(uid_1) {
+// save a new user with uid (string), uname (string), artists(string[]), genres(string[]), basic_score(int)
+async function newUser(uid_1, uname, artists, genres, basic_score) {
   var ref = Str.random(7); // generate the referral code
-  const NewUser = User.build({ referral_code: ref, uid_1: uid_1 });
+  const NewUser = User.build({ referral_code: ref, uid_1: uid_1, uname: uname, artists: artists, genres: genres, basic_score: basic_score });
   try{
     await NewUser.save();
     console.log("New User was saved to the database!");
@@ -106,6 +118,10 @@ async function displayUser(uid_1){
     data.push(user.uid_1);
     data.push(user.uid_2);
     data.push(user.uid_3);
+    data.push(user.uname);
+    data.push(user.artists);
+    data.push(user.genres);
+    data.push(user.basic_score);
     console.log(data);
     return data;
   }
@@ -146,9 +162,9 @@ async function addReferral(ref_code, uid){
 
 async function main(){
     //await testConnection();
-    //await newUser("8765432");
+    //await newUser("3456789", "test-user", ["fletcher", "half-alive"], ["pop"], 10);
     //await checkUserExists("8765432");
-    //await displayUser("7654321");
+    await displayUser("9876543");
     //await checkSlots("zWrjls9");
     //await addReferral("zWrjls9", "8765432");
 }
